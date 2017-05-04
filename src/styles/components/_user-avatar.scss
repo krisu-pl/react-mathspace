@@ -1,0 +1,17 @@
+.user-avatar {
+  position: relative;
+}
+
+.user-avatar__notification {
+  width: 8px;
+  height: 8px;
+  background: red;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 100%;
+}
+
+.user-avatar__image {
+  width: 30px;
+}

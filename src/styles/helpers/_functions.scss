@@ -1,0 +1,5 @@
+$image-url-path: '../../public/assets/img/' !default;
+
+@function image-url($url) {
+  @return url("#{$image-url-path}#{$url}");
+}

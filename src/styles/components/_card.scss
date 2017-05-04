@@ -1,0 +1,57 @@
+$card-header-height: 75%;
+$card-footer-height: 25%;
+
+.card {
+  width: 305px;
+  height: 85%;
+  margin: 0 10px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  box-shadow: 0 0 10px #ddd;
+  transition: height ease-in-out .2s;
+  position: relative;
+  cursor: pointer;
+
+  &--active {
+    height: 92%;
+    cursor: default;
+  }
+}
+
+.card__header {
+  width: 100%;
+  height: $card-header-height;
+  background: $blue;
+  color: $white;
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card__title {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+.card__status {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background: image-url('tick-big@2x.png') no-repeat;
+  background-size: 100%;
+  background-color: $green;
+  opacity: 0;
+
+  &--done {
+    opacity: 1;
+  }
+}
+
+.card__footer {
+  height: $card-footer-height;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

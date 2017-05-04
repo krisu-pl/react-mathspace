@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.main {
+  width: 375px;
+  height: 680px;
+  margin: 0 auto;
+  background: $white;
+  display: flex;
+  flex-direction: column;
+}
+

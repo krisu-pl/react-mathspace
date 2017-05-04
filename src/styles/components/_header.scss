@@ -1,0 +1,41 @@
+.header {
+  width: 100%;
+  height: $header-height;
+  flex-grow: 0;
+  flex-shrink: 0;
+  background: $pink;
+  color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.header__menu {
+  width: 50px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &--icon {
+    width: 22px;
+  }
+}
+
+.header__title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__user {
+  width: 50px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}

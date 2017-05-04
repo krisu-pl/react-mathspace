@@ -1,0 +1,17 @@
+.btn {
+  font-size: 15px;
+  border: 0;
+  border-radius: 100px;
+  padding: 18px 40px;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn--primary {
+  background-color: $green;
+  color: $white;
+
+  &:hover {
+    background-color: lighten($green, 5%);
+  }
+}
